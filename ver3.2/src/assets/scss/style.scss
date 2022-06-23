@@ -1,0 +1,27 @@
+@import "base/_mixins.scss";
+@import "base/_vars.scss";
+@import "base/nullstyle";
+@import "base/fonts";
+@import "base/wrapper";
+
+[class*="__container"] {
+  max-width: 1630px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  &._lock {
+    overflow: hidden;
+  }
+  font-family: "VantaLight";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  color: white;
+  background: black;
+}
+
+@import "partials/header.scss";
+@import "partials/footer.scss";
