@@ -1,0 +1,131 @@
+$blue: #000055
+$magenta: #ff267e
+$green: #05C489
+$green-hover: #09B47F
+$grey: #EDEDED
+$text: #292929
+
+$font-suisse-bold: SuisseIntl-Bold, sans-serif //700
+$font-suisse-reg: SuisseIntl-Regular, sans-serif //400
+$font-suisse-semb: SuisseIntl-SemiBold, sans-serif //600
+$font-wulkan: WulkanDisplay, sans-serif //
+
+body
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  background: black
+  img
+    max-width: 100%
+    height: auto
+
+
+.banner
+  overflow: hidden
+  padding: 40px 0
+  @media screen and (min-width: 700px) and (orientation: landscape) and (min-height: 451px)
+    background: url('../img/bg-desc-2.jpg') no-repeat 50% 0/cover
+  @media screen and (min-width: 601px) and (max-width: 1120px) and (orientation: portrait)
+    background: url('../img/bg-tab-2.jpg') no-repeat 50% 0/cover
+  @media screen and (max-width: 690px) and (orientation: portrait)
+    background: url("../img/bg-mob-2.jpg") no-repeat 50% 0/cover
+  @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+    background: url("../img/bg-tab-2.jpg") no-repeat 50% 0/cover
+  &__container
+    max-width: 1220px
+    padding: 0 15px
+    margin: 0 auto
+    position: relative
+  &__row
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+  &__title
+    font-family: $font-suisse-bold
+    font-size: 76px
+    line-height: 75px
+    letter-spacing: 0.04em
+    text-transform: uppercase
+    color: #EDEDED
+    margin: 0 0 30px 0
+    span
+      font-family: $font-wulkan
+  &__button
+    display: inline-block
+    font-family: $font-suisse-semb
+    font-size: 24px
+    line-height: 31px
+    letter-spacing: 0.08em
+    text-transform: uppercase
+    color: $blue
+    padding: 29px 75px 27px
+    background: $green
+    margin: 0 0 30px 0
+
+    transition: background-color .3s ease
+    &:hover
+      background: $green-hover
+  &__link
+    font-family: $font-suisse-reg
+    font-size: 16px
+    line-height: 21px
+    text-align: center
+    letter-spacing: 0.01em
+    text-decoration-line: underline
+    color: #FFFFFF
+    &:hover
+      text-decoration-line: none
+  &__dep
+    position: absolute
+    top: 57%
+    right: 40px
+    transform: translateY(-50%)
+    display: flex
+    z-index: 2
+    &-left,
+    &-right
+      display: flex
+      flex-direction: column
+      align-items: center
+    &-left
+      margin: 80px 35px 0 0
+    .in
+      font-family: $font-suisse-semb
+      font-size: 64px
+      line-height: 79px
+      letter-spacing: 0.01em
+      text-transform: uppercase
+      opacity: 0.35
+      color: transparent
+      -webkit-text-stroke-width: 1.5px
+      -webkit-text-stroke-color: #EDEDED
+      &-none
+        display: none
+      &-mob
+        display: none
+    p
+      font-family: $font-suisse-semb
+      font-size: 64px
+      line-height: 65px
+      text-align: center
+      letter-spacing: 0.01em
+      text-transform: uppercase
+      color: #EDEDED
+      span
+        display: block
+        font-size: 40px
+        line-height: 52px
+        white-space: nowrap
+        margin-top: -4px
+    &-right
+      padding: 10px 0 0 0
+      .in
+        line-height: 82px
+        &-last
+          margin: 0 0 91px 0
+      p
+        line-height: 75px
+
