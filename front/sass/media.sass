@@ -14,6 +14,9 @@
 
 @media screen and (min-width: 2400px) and (min-height: 1120px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(1.2)
     &__main
       &-wrapper
         transform-origin: bottom center
@@ -42,6 +45,9 @@
 
 @media screen and (max-width: 1700px) and (max-height: 840px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.9)
     &__main
       &-txt
         transform: translateX(-50%) scale(0.85)
@@ -75,6 +81,9 @@
 
 @media screen and (max-width: 1400px) and (max-height: 768px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.8)
     &__main
       &-logo
         width: 355px
@@ -101,6 +110,9 @@
 
 @media screen and (max-width: 1400px) and (max-height: 660px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.7)
     &__main
       &-wrapper
         transform: scale(0.65)
@@ -129,6 +141,9 @@
 
 @media screen and (max-width: 1300px) and (min-height: 1000px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.75)
     &__footer
       transform: scale(0.66)
 
@@ -139,6 +154,9 @@
 
 @media screen and (max-width: 1125px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.65)
     &__main
       &-logo
         width: 308px
@@ -226,6 +244,9 @@
 
 @media screen and (max-width: 840px) and (orientation: portrait)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.65)
     &__main
       &-txt
         top: 14%
@@ -255,8 +276,18 @@
       &-txt
         top: 13%
 
+
+@media screen and (max-width: 770px) and (orientation: portrait)
+  .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.6)
+
 @media screen and (max-width: 720px) and (orientation: portrait)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.55)
     &__main
       &-txt
         transform: translateX(-50%) scale(0.9)
@@ -266,6 +297,87 @@
 @media screen and (max-width: 660px) and (orientation: portrait)
   .bonus
     overflow-y: scroll
+    &__overlay
+      &-chip
+        transform: scale(0.5)
+        z-index: -1
+      .overlayChip-1
+        bottom: 205px
+        left: 2px
+      .overlayChip-2
+        bottom: -52px
+        left: 36px
+      .overlayChip-3
+        left: 173px
+        top: -176px
+      .overlayChip-4
+        top: -81px
+        left: 62px
+        transform: scale(0.8)
+      .overlayChip-5
+        top: -131px
+        right: -83px
+      .overlayChip-6
+        top: 269px
+        right: 33px
+      .overlayChip-7
+        bottom: 152px
+        right: -33px
+    &__firstWin,
+    &__secondWin
+      margin-top: 50px
+      transform: scale(1)
+      &-sum
+        font-size: 24px
+        line-height: 40px
+      &-title
+        font-size: 96px
+        line-height: 114px
+        .wrap
+          white-space: normal
+          display: flex
+          flex-direction: column
+          align-items: center
+          span
+            margin: -37px 0 -30px
+            font-size: 83px
+            line-height: 98px
+      &-try
+        font-size: 18px
+        line-height: 24px
+        max-width: 310px
+        margin: -34px 0 23px 0
+      &-btn
+        font-size: 24px
+        line-height: 31px
+        padding: 31px 57px 29px
+    &__firstWin
+      &-btn
+        font-size: 24px
+        line-height: 31px
+        padding: 31px 74px 29px
+      .overlayChip-1
+        bottom: 109px
+        left: -3px
+      .overlayChip-2
+        bottom: -181px
+        left: 36px
+      .overlayChip-3
+        left: 173px
+        top: -243px
+      .overlayChip-4
+        top: -139px
+        left: 49px
+        transform: scale(0.8)
+      .overlayChip-5
+        top: -198px
+        right: -83px
+      .overlayChip-6
+        top: 235px
+        right: 33px
+      .overlayChip-7
+        bottom: 4px
+        right: -37px
     &::before
       content: none
     &__footer
@@ -344,6 +456,12 @@
         transform: scale(0.68)
         bottom: -24px
 
+@media screen and (max-width: 400px) and (orientation: portrait)
+  .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.9)
+
 @media screen and (max-width: 380px) and (orientation: portrait) and (max-height: 650px)
   .bonus
     &__main
@@ -354,6 +472,9 @@
 
 @media screen and (max-width: 380px) and (orientation: portrait) and (max-height: 570px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.8)
     &__main
       &-wrapper
         transform: scale(0.58)
@@ -369,6 +490,9 @@
 
 @media screen and (max-width: 330px) and (orientation: portrait)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.75)
     &__main
       &-txt
         transform: translateX(-50%) scale(0.8)
@@ -380,6 +504,23 @@
 
 @media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
   .bonus
+    &__overlay
+      &-chip
+        transform: scale(0.75)
+        z-index: -1
+      .overlayChip-2
+        transform: scale(0.75) rotate(45deg)
+      .overlayChip-3
+        transform: scale(0.75) rotate(-45deg)
+      .overlayChip-4
+        transform: scale(0.95)
+        left: 224px
+      .overlayChip-6
+        transform: scale(0.85) rotate(270deg)
+    &__firstWin,
+    &__secondWin
+      margin-top: 25px
+      transform: scale(0.55)
     &::before
       content: none
     &__footer
@@ -408,6 +549,9 @@
 
 @media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 385px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.45)
     &__footer
       transform: scale(0.4)
     &__main
@@ -434,6 +578,9 @@
 
 @media screen and (max-width: 920px) and (orientation: landscape) and (max-height: 310px)
   .bonus
+    &__firstWin,
+    &__secondWin
+      transform: scale(0.4)
     &__main
       &-wrapper
         transform: scale(0.3)
