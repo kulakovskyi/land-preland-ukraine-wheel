@@ -48,7 +48,7 @@ body
   @media screen and (min-width: 601px) and (max-width: 1024px) and (orientation: portrait)
     background: #005  url('../img/bg-desc.jpg') no-repeat 50% 0/cover
   @media screen and (max-width: 600px) and (orientation: portrait)
-    background: #005 url("../img/bg-mob.jpg") no-repeat 50% 130%/cover
+    background: #005 url("../img/bg-mob.jpg") no-repeat 50% 0%/cover
   @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
     background: #005 url("../img/bg-landscape.jpg") no-repeat 50% 0/cover
   &__overlay
@@ -326,6 +326,8 @@ body
         transform: translate(-50%, -50%)
         animation: 4s infinite pulseBackWheel ease-in-out
         animation-delay: 1s
+      &-arrowMob
+        display: none
       &-wrap
         position: relative
         width: 800px
@@ -479,6 +481,26 @@ body
     opacity: 1
   100%
     transform: translate(-50%, -50%) scale(1)
+    opacity: 0
+
+
+@keyframes pulseBackWheelMob
+  0%
+    transform: translate(-50%, -50%) scale(0.8)
+    opacity: 0
+  50%
+    transform: translate(-50%, -50%) scale(0.9)
+    opacity: 1
+  100%
+    transform: translate(-50%, -50%) scale(0.8)
+    opacity: 0
+
+@keyframes opacityArrow
+  0%
+    opacity: 0
+  50%
+    opacity: 1
+  100%
     opacity: 0
 
 @keyframes arrowRight
