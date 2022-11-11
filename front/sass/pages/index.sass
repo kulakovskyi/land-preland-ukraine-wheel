@@ -81,7 +81,7 @@ body
       width: 324px
       height: 265px
       bottom: 101px
-      left: -226px
+      left: -344px
       @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
         background: url("../img/chip-2.png") no-repeat 0 0/contain
       @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
@@ -133,7 +133,7 @@ body
       width: 316px
       height: 238px
       top: -38px
-      right: -297px
+      right: -376px
       @media screen and (min-width: 551px) and (orientation: landscape) and (min-height: 500px)
         background: url("../img/chip-6.png") no-repeat 0 0/contain
       @media screen and (min-width: 551px) and (max-width: 1024px) and (orientation: portrait)
@@ -177,10 +177,20 @@ body
       color: $grey
       margin-bottom: -40px
     &-title
+      span
+        position: absolute
+        z-index: 1
+        top: 53px
       .wrap
         font-family: $font-rubik
         white-space: nowrap
+        position: absolute
+        z-index: 1
+        top: 53px
+        display: flex
+        align-items: center
         span
+          position: static !important
           font-family: $font-rubik
           color: $grey
           text-shadow: 0px 0px 35px rgba(255, 38, 126, 0.5), 0px 0px 14px #FF267E, 0px 2px 5px rgba(0, 0, 0, 0.3)
@@ -198,14 +208,14 @@ body
       &::before
         content: ''
         display: block
-        margin-bottom: -55px
+        margin-bottom: 28px
         width: 666px
         height: 114px
         background: url('../img/light.png') no-repeat 50% 0/contain
       &::after
         content: ''
         display: block
-        margin-top: -55px
+
         width: 666px
         height: 114px
         transform: rotate(180deg)
