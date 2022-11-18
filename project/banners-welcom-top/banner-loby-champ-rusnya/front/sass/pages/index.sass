@@ -1,0 +1,68 @@
+$blue: #000055
+$magenta: #ff267e
+$green: #05C489
+$green-hover: #09B47F
+$grey: #EDEDED
+$text: #292929
+
+$font-suisse-bold: SuisseIntl-Bold, sans-serif //700
+$font-suisse-reg: SuisseIntl-Regular, sans-serif //400
+$font-suisse-semb: SuisseIntl-SemiBold, sans-serif //600 //
+$font-wulkan: WulkanDisplay, sans-serif //
+
+body
+  -webkit-tap-highlight-color: rgba(0,0,0,0)
+  overscroll-behavior: none
+  img
+    max-width: 100%
+    height: auto
+
+
+.banner
+  overflow: hidden
+  padding: 70px 0 27px
+  @media screen and (min-width: 700px) and (orientation: landscape) and (min-height: 451px)
+    background: url('../img/bg-desc-2.jpg') no-repeat 50% 0/cover
+  @media screen and (min-width: 601px) and (max-width: 1120px) and (orientation: portrait)
+    background: url('../img/bg-tab-2.jpg') no-repeat 50% 0/cover
+  @media screen and (max-width: 690px) and (orientation: portrait)
+    background: url("../img/bg-mob-2.jpg") no-repeat 50% 0/cover
+  @media (max-width: 920px) and (orientation: landscape) and (max-height: 450px)
+    background: url("../img/bg-tab-2.jpg") no-repeat 50% 0/cover
+  &__container
+    max-width: 1500px
+    padding: 0 60px
+    margin: 0 auto
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+  &__text
+    position: relative
+    z-index: 5
+    font-family: $font-suisse-semb
+    font-size: 60px
+    line-height: 84px
+    color: #EDEDED
+    text-transform: uppercase
+    //max-width: 525px
+    letter-spacing: 0.04em
+    span
+      font-family: $font-wulkan
+  &__image
+    max-width: 665px
+    position: relative
+    z-index: 2
+    &::before
+      z-index: 1
+      content: ''
+      position: absolute
+      width: 130%
+      height: 100%
+      background: radial-gradient(50% 50% at 50% 50%, #FF267E 0%, rgba(255, 38, 126, 0) 100%)
+      filter: blur(100px)
+      top: -30px
+      left: 50%
+      transform: translateX(-50%)
+    img
+      position: relative
+      z-index: 2
