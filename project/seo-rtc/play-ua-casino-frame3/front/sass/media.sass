@@ -1,0 +1,164 @@
+//@media screen and (max-width: 1160px)
+//  .casino
+//    &__list
+//      display: grid
+//      grid-template-columns: 50% 50%
+//      gap: 15px
+//    &__item
+//      flex-direction: column
+//      align-items: flex-start
+//      padding: 18px
+//      &:not(:last-child)
+//        margin: 0
+//      &-info
+//        margin: 0 0 20px 0
+
+
+@media screen and (max-width: 888px)
+  .casino
+    &__list
+      display: flex
+      flex-direction: column
+    &__item
+      align-items: stretch
+      flex-direction: column
+      padding: 18px
+      &:not(:last-child)
+        margin: 0 0 10px 0
+      &-info
+        margin: 0 0 20px 0
+      &-info
+        grid-template-columns: 60px auto auto
+        column-gap: 15px
+        order: 1
+        margin: 0 0 15px 0
+        padding: 0 0 15px 0
+        border-bottom: 1px solid $grey
+      &-image
+        max-width: 60px
+        grid-row: 1/3
+        grid-column: 1/2
+      &-title
+        grid-row: 1/2
+        grid-column: 2/3
+      &-rating
+        grid-row: 2/3
+        grid-column: 2/3
+      &-buttons
+        grid-row: 1/3
+        grid-column: 3/4
+        justify-self: end
+        align-self: start
+        margin: 0
+
+      &-bonus
+        order: 2
+        margin: 0
+        display: grid
+        grid-template-columns: auto auto
+        &-title
+          grid-column: 1/2
+          grid-row: 1/2
+        &-text
+          grid-column: 1/2
+          grid-row: 2/3
+          margin: 0
+        &-buttons
+          grid-column: 2/3
+          grid-row: 1/3
+          margin: 0
+          justify-self: end
+          display: flex
+          flex-direction: row-reverse
+        &-button-orange
+          margin: 0
+        &-link
+          margin: 0 15px 0 0
+
+@media screen and (max-width: 600px)
+  .casino
+    padding: 80px 0 40px 0
+    &__link
+      display: block
+      padding: 13px 15px 11px
+      width: 97%
+      margin: 0 auto
+      text-align: center
+    &__container
+      width: auto
+      margin: 0
+    &__title
+      font-size: 28px
+      line-height: 44px
+      margin: 0
+      padding: 0 15px
+    &__text
+      font-size: 14px
+      line-height: 22px
+      max-width: 430px
+      margin: 0 auto 20px auto
+      padding: 0 15px
+    &__item
+      padding: 15px
+      &-info
+        grid-template-columns: 48px auto
+        column-gap: 10px
+        padding: 0 0 20px 0
+      &-image
+        max-width: 48px
+      &-title
+        font-size: 16px
+        line-height: 20px
+        margin: 0
+      &-rating
+        &-top
+          margin: 0 8px 0 0
+          img
+            &:not(:last-child)
+              margin: 0 8px 0 0
+        &-grade
+          img
+            margin: 0 8px 0 0
+          p
+            font-size: 14px
+            line-height: 20px
+      &-buttons
+        margin-top: 20px
+        grid-row: 3/4
+        grid-column: 1/3
+        align-self: stretch
+        width: 100%
+      &-button
+        font-size: 12px
+        line-height: 18px
+        padding: 9px 15px 7px
+        width: 50%
+        text-align: center
+        &-white
+          margin: 0 7px 0 0
+      &-bonus
+        &-title
+          font-size: 20px
+          line-height: 25px
+        &-text
+          font-size: 14px
+          line-height: 20px
+        &-buttons
+          flex-direction: column-reverse
+          align-items: flex-end
+          margin-left: 15px
+        &-link
+          font-size: 16px
+          line-height: 23px
+          margin: 0 0 4px 0
+        &-button-orange
+          font-size: 12px
+          line-height: 18px
+          padding: 9px 35px 7px
+
+
+
+
+
+
+
